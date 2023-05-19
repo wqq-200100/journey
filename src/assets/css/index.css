@@ -1,0 +1,25 @@
+@import "normalize.css";
+/*@import "reset.css";*/
+
+:root {
+    --primary-color:orange;
+
+    --van-nav-bar-text-color: var(--primary-color) !important;
+    --van-nav-bar-icon-color: var(--primary-color) !important;
+}
+.section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+    color: #999;
+    height: 40px;
+}
+
+.top-page{
+    position: relative;
+    z-index: 9;
+    height: 100vh;
+    background-color: #fff;
+    overflow: auto;
+}
