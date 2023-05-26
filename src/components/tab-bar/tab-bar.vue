@@ -1,4 +1,5 @@
 <template>
+  <!-- 底部导航 -->
   <div class="tab-bar">
     <template v-for="(item,index) in TabBerData">
       <div class="tab-bar-item"
@@ -21,7 +22,7 @@ import {useRouter} from "vue-router";
 
 const currentIndex = ref(0)
 const router = useRouter()
-const itemClick = (index,item) => {
+const itemClick = (index, item) => {
   currentIndex.value = index
   router.push(item.path)
 }
@@ -48,6 +49,7 @@ const itemClick = (index,item) => {
     &.active {
       color: var(--primary-color);
     }
+
     .text {
       font-size: 12px;
     }
